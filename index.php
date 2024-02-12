@@ -139,15 +139,7 @@ function generateTickets()
 
       if (!empty($value)) {
 
-        $servername = "localhost";
-        $username = "root";
-        $password = "password";
-        $database = "tambola_db";
-
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $database);
-        // Check connection
-
+        require './dbconnect.php';
 
         $ticketJson = json_encode($value); // Convert ticket data to JSON format
 
@@ -178,7 +170,7 @@ $num = mysqli_num_rows($result);
 $i = 1;
 while ($row = mysqli_fetch_assoc($result)) {
   if ($row['id'] !== '1') {
-    echo ' <a href="http://localhost/tabmola/page.php?page=' . $row['id'] . '">' . $i . "</a>";
+    echo ' <a href="http://localhost/tambola/page.php?page=' . $row['id'] . '">' . $i . "</a>";
     $i++;
   }
 }
