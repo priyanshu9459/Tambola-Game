@@ -1,0 +1,37 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+ 
+}
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box-color {
+  background-color: rgb(255, 255, 255);
+}
+.ticket{
+  display: flex;
+      justify-content: center;
+      align-items: center; 
+      height: 20vh;
+}
+.box {
+  border: 1px solid rgb(229, 203, 11);
+  margin: 10px;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
